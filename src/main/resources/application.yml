@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kcsurapaneni/configuration-data
+          default-label: main
+          clone-on-start: true
+          force-pull: true
+          search-paths: '{application}'
